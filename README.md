@@ -21,9 +21,9 @@ In the future we will update this sample to include other ADAL libraries as crea
 
 You can get [Xamarin Studio](http://xamarin.com/studio?_bt=44014804148&_bk=xamarin%20studio&_bm=e&gclid=COqr3sHrs70CFUWVfgodkmEAwg) from the Xamarin website.
 
-### Step 2: Create a "Java Binding" Project in Xamarin Studio
+### Step 2: Create a "Android Java Binding Library" Project in Xamarin Studio
 
-Select File -> New -> Solution and select "Java Binding Project"
+Select File -> New -> Solution and select "Android Java Binding Library"
 
 ### Step 3: Clone this code in to your Project directory
 
