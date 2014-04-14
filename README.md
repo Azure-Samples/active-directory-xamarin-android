@@ -27,6 +27,10 @@ In the future we will update this sample to include other ADAL libraries as crea
 
 `zip -r AdalWithResource.zip bin/classes.jar bin/AndroidManifest.xml res`
 
+You will need to bind to **classes.jar** in your Xamarin Studio Java Binding project as discissed in [Binding Java Libraries](http://docs.xamarin.com/guides/android/advanced_topics/java_integration_overview/binding_a_java_library_(.jar)/). The easiest way to do this is to grab the latest ADAL for Java and compile the source.
+
+You can get the latest ADAL for Java library here: https://github.com/MSOpenTech/azure-activedirectory-library-for-android
+
 
 Add the dependency jar files to binding project as well if it has changed and keep them as an embebded referenced jar.
 
@@ -52,7 +56,7 @@ The names of the files in this repository should match closely the default files
 
 ### Step 3: Add the latest version of ADAL for Java library to the Project
 
-You will need to bind to **??????.jar** in your Xamarin Studio Java Binding project as discissed in [Binding Java Libraries](http://docs.xamarin.com/guides/android/advanced_topics/java_integration_overview/binding_a_java_library_(.jar)/). The easiest way to do this is to grab the latest ADAL for Java and compile the source.
+You will need to bind to **classes.jar** in your Xamarin Studio Java Binding project as discissed in [Binding Java Libraries](http://docs.xamarin.com/guides/android/advanced_topics/java_integration_overview/binding_a_java_library_(.jar)/). The easiest way to do this is to grab the latest ADAL for Java and compile the source.
 
 You can get the latest ADAL for Java library here: https://github.com/MSOpenTech/azure-activedirectory-library-for-android
 
