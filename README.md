@@ -48,7 +48,8 @@ You will need to bind to **AdalWithResources.zip** in your Xamarin Studio Java B
 Run the project and then pull the .dll files out of the /bin directory Xamarin Studio will create.
 
 
-## To update the AdalWithResources.zip file from the command line (if you wish to update a later version of the classes.jar library)
+## To update the AdalWithResources.zip file from the command line 
+(if you wish to update a later version of the classes.jar library)
 
 `cd azure-activedirectory-library-for-android/`
 
