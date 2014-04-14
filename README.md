@@ -20,9 +20,13 @@ In the future we will update this sample to include other ADAL libraries as crea
 ## For Command Line Use
 
 `cd azure-activedirectory-library-for-android/`
+
 `android update project -p .`
+
 `ant debug`
+
 `zip -r AdalWithResource.zip bin/classes.jar bin/AndroidManifest.xml res`
+
 
 Add the dependency jar files to binding project as well if it has changed and keep them as an embebded referenced jar.
 
