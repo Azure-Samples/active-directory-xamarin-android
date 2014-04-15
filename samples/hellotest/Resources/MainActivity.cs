@@ -81,8 +81,11 @@ namespace hellotest
 				Logger.D (TAG, "Success:");
 				AuthenticationResult aresult = result.JavaCast<AuthenticationResult> ();
 				if (aresult != null) {
-					Toast.MakeText (context, "Token Info:"+aresult.AccessToken, ToastLength.Long).Show ();
 					Logger.V (TAG, "token:" + (aresult.AccessToken));
+                    			AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                    			builder.SetMessage(aresult.AccessToken);
+                    			builder.SetTitle(aresult.ExpiresOn.ToString());
+                    			builder.Create().Show();
 				}
 			}
 		}
