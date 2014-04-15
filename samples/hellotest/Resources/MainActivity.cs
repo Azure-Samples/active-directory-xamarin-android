@@ -40,10 +40,11 @@ namespace hellotest
 			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.myButton);
 			
+			
 			button.Click += delegate {
 				button.Text = string.Format ("{0} clicks!", count++);
 				mAuthContext.AcquireToken (this, RESOURCE_ID, CLIENT_ID,
-					REDIRECT_URL, USER_HINT, new TestCallback (this)
+				 	REDIRECT_URL, USER_HINT, new TestCallback (this)
 				);
 
 			};
@@ -62,7 +63,9 @@ namespace hellotest
 
 		class TestCallback :Java.Lang.Object, IAuthenticationCallback
 		{
+			
 			Context context;
+			
 
 			public TestCallback(Context ctx){
 				context = ctx;
