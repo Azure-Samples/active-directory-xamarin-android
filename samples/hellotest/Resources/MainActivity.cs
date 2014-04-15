@@ -70,12 +70,11 @@ namespace hellotest
 			public void OnSuccess (Java.Lang.Object result)
 			{
 				Logger.D (TAG, "Success:");
-			
-				if (result is AuthenticationResult) {
-					AuthenticationResult aresult = (AuthenticationResult)result;
+				AuthenticationResult aresult = result.JavaCast<AuthenticationResult> ();
+				if (aresult != null) {
+					Toast.MakeText (context, "exception:", ToastLength.Long).Show ();
 					Logger.V (TAG, "token:" + (aresult.AccessToken));
 				}
-
 			}
 		}
 	}
