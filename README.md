@@ -47,6 +47,22 @@ You will need to bind to **AdalWithResources.zip** in your Xamarin Studio Java B
 
 Run the project and then pull the .dll files out of the /bin directory Xamarin Studio will create.
 
+### Step 5: Broker usage
+Microsoft Intune's Company portal app installs the Authencator plugin that does the token broker using AccountManager. Adal will use the broker account by default, if there is one user account at this authenticator and Developer choose not to skip it. Developer can skip the broker user with:
+
+```java
+  AuthenticationSettings.Instance.setSkipBroker(true);
+```
+
+Developer needs to register special redirectUri for broker usage. RedirectUri is in the format of msauth://packagename/Base64UrlencodedSignature. You can get your redirecturi for your app using the script "brokerRedirectPrint.ps1" or use API call mContext.getBrokerRedirectUri. Signature is related to your signing certificate
+
+Your app manifest should have permissions to use AccountManager accounts:
+http://developer.android.com/reference/android/accounts/AccountManager.html#getAccountsByType(java.lang.String)
+* GET_ACCOUNTS
+* USE_CREDENTIALS
+* MANAGE_ACCOUNTS
+
+RedirectUri is used to verify the calling app from AAD app registration. Broker will not give token if redirecturi does not match.
 
 ## To update the AdalWithResources.zip file from the command line 
 (if you wish to update a later version of the classes.jar library)
