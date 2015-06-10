@@ -84,4 +84,6 @@ You can get the latest ADAL for Java library here:
 
 Add the dependency jar files to binding project as well if it has changed and keep them as an embebded referenced jar.
 
+Zip file should have bin and res folders:
 
+AdalWithResources.zip -> (bin,res)
