@@ -1,3 +1,9 @@
+---
+services:
+platforms:
+author: azure
+---
+
 #Windows Azure Active Directory Binding Example for Android for Xamarin
 
 
