@@ -1,11 +1,4 @@
----
-services:
-platforms:
-author: azure
----
-
-#Windows Azure Active Directory Binding Example for Android for Xamarin
-
+# Azure Active Directory Binding Example for Android for Xamarin
 
 This sample shows how to build a Xamarin binding to our native ADAL for Android library. This is a sample and is not to be used in production. We plan on adding a true cross platform mapping layer in the future. For those interested in binding to our Android library in .Net using Xamarin, this code is a good guide.
 
