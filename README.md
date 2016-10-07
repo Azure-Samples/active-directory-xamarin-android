@@ -4,6 +4,8 @@ platforms: xamarin
 author: brandwe
 ---
 
+**DEPRECATION NOTE**: ADAL v3 has been released and offers a better experience using Xamarin with Android than this walkthrough. The sample for this [is located here](https://github.com/Azure-Samples/active-directory-dotnet-native-multitarget). We recommend you use the new ADAL v3 walkthrough unless you  have a specific reason for requiring the binding of the native Android library in your Xamarin application.
+
 # Using ADAL for Android in Xamarin with bindings
 
 This sample shows how to build a Xamarin binding to our native ADAL for Android library. This is a sample and is not to be used in production. We plan on adding a true cross platform mapping layer in the future. For those interested in binding to our Android library in .Net using Xamarin, this code is a good guide.
