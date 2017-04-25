@@ -1,7 +1,7 @@
 ---
 services: active-directory
 platforms: xamarin
-author: brandwe
+author: xerners
 ---
 
 **DEPRECATION NOTE**: ADAL v3 has been released and offers a better experience using Xamarin with Android than this walkthrough. The sample for this [is located here](https://github.com/Azure-Samples/active-directory-dotnet-native-multitarget). We recommend you use the new ADAL v3 walkthrough unless you  have a specific reason for requiring the binding of the native Android library in your Xamarin application.
