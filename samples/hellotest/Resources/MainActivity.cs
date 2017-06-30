@@ -15,8 +15,8 @@ namespace hellotest
 	{
 		const string TAG = "MainActivity";
 		// AAD PARAMETERS
-		// https://login.windows.net/tenantInfo
-		const string AUTHORITY_URL = "https://login.windows.net/omercantest.onmicrosoft.com";
+		// https://login.microsoftonline.com/tenantInfo
+		const string AUTHORITY_URL = "https://login.microsoftonline.com/omercantest.onmicrosoft.com";
 		// Clientid is given from AAD page when you register your Android app
 		const string CLIENT_ID = "650a6609-5463-4bc4-b7c6-19df7990a8bc";
 		// RedirectUri
