@@ -19,7 +19,7 @@ In the future we will update this sample to include other ADAL libraries as crea
 
 ## Quick Start
 
-###Step 0: Learn about binding java libraries with Xamarin
+### Step 0: Learn about binding java libraries with Xamarin
 
 * You'll get up to speed faster if you do some reading of the Xamarin documentation for Android Binding to native libraries located here: [Binding Android Libraries](http://docs.xamarin.com/guides/android/advanced_topics/java_integration_overview/binding_a_java_library_(.jar)/)
 
